@@ -17,4 +17,4 @@ RUN apt-get update && \
 # Revert to the original user
 USER git
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/scripts/entrypoint.sh", "/usr/local/bin/process-wrapper.sh"]
