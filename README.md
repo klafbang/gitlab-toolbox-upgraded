@@ -8,14 +8,14 @@ This repository provides a custom GitLab toolbox image based on the official Git
 
 ## Features
 
-- **Base Image**: GitLab Toolbox CE v18.1.2
-- **PostgreSQL Client**: Upgraded to PostgreSQL 17 (from default version 16)
+- **Base Image**: GitLab Toolbox EE v18.11.2
+- **PostgreSQL Client**: Upgraded to PostgreSQL 18 (from default version 17)
 - **Compatibility**: Maintains full compatibility with GitLab toolbox functionality
 - **Clean Installation**: Properly removes old PostgreSQL client before installing the new version
 
 ## What's Included
 
-- PostgreSQL 17 client tools (`psql`, `pg_dump`, `pg_restore`, etc.)
+- PostgreSQL 18 client tools (`psql`, `pg_dump`, `pg_restore`, etc.)
 - All standard GitLab toolbox utilities and scripts
 - Official PostgreSQL APT repository for reliable updates
 
@@ -79,19 +79,19 @@ pg_restore -h your-db-host -U username -d database_name backup.dump
 
 ## Version Information
 
-- **GitLab Toolbox**: v18.1.2
-- **PostgreSQL Client**: 17.x (latest from official PostgreSQL APT repository)
+- **GitLab Toolbox**: v18.11.2
+- **PostgreSQL Client**: 18.x (latest from official PostgreSQL APT repository)
 - **Base OS**: Debian-based (inherited from GitLab toolbox image)
 
 ## Dockerfile Details
 
 The Dockerfile performs the following operations:
 
-1. Starts from the official GitLab toolbox CE image
+1. Starts from the official GitLab toolbox EE image
 2. Switches to root user for package management
 3. Adds the official PostgreSQL APT repository
 4. Removes the existing PostgreSQL client (version 16)
-5. Installs PostgreSQL 17 client tools
+5. Installs PostgreSQL 18 client tools
 6. Cleans up package cache to reduce image size
 7. Reverts to the original `git` user
 8. Maintains the original entrypoint
