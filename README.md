@@ -8,7 +8,7 @@ This repository provides a custom GitLab toolbox image based on the official Git
 
 ## Features
 
-- **Base Image**: GitLab Toolbox EE v18.11.2
+- **Base Image**: GitLab Toolbox EE v18.11.3
 - **PostgreSQL Client**: Upgraded to PostgreSQL 18 (from default version 17)
 - **Compatibility**: Maintains full compatibility with GitLab toolbox functionality
 - **Clean Installation**: Properly removes old PostgreSQL client before installing the new version
@@ -79,7 +79,7 @@ pg_restore -h your-db-host -U username -d database_name backup.dump
 
 ## Version Information
 
-- **GitLab Toolbox**: v18.11.2
+- **GitLab Toolbox**: v18.11.3
 - **PostgreSQL Client**: 18.x (latest from official PostgreSQL APT repository)
 - **Base OS**: Debian-based (inherited from GitLab toolbox image)
 
