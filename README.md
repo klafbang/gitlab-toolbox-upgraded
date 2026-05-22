@@ -4,11 +4,11 @@ A custom GitLab toolbox Docker image with upgraded PostgreSQL client tools.
 
 ## Overview
 
-This repository provides a custom GitLab toolbox image based on the official GitLab toolbox CE image, but with upgraded PostgreSQL client tools to version 17. This is particularly useful for GitLab instances that need to work with newer PostgreSQL databases or require the latest PostgreSQL features and improvements.
+This repository provides a custom GitLab toolbox image based on the official GitLab toolbox EE image, but with upgraded PostgreSQL client tools to version 18. This is particularly useful for GitLab instances that need to work with newer PostgreSQL databases or require the latest PostgreSQL features and improvements.
 
 ## Features
 
-- **Base Image**: GitLab Toolbox EE v18.11.3
+- **Base Image**: GitLab Toolbox EE v19.0.0
 - **PostgreSQL Client**: Upgraded to PostgreSQL 18 (from default version 17)
 - **Compatibility**: Maintains full compatibility with GitLab toolbox functionality
 - **Clean Installation**: Properly removes old PostgreSQL client before installing the new version
@@ -79,7 +79,7 @@ pg_restore -h your-db-host -U username -d database_name backup.dump
 
 ## Version Information
 
-- **GitLab Toolbox**: v18.11.3
+- **GitLab Toolbox**: v19.0.0
 - **PostgreSQL Client**: 18.x (latest from official PostgreSQL APT repository)
 - **Base OS**: Debian-based (inherited from GitLab toolbox image)
 
@@ -125,4 +125,7 @@ For PostgreSQL-related questions, check the [PostgreSQL documentation](https://w
 
 ## Changelog
 
+- **v19.0.0**: Based on GitLab toolbox EE v19.0.0
+- **v18.11.3**: Based on GitLab toolbox EE v18.11.3
+- **v18.11.2**: Forked version with PostgreSQL 18 client tools upgrade based on GitLab toolbox EE v18.11.2
 - **v1.0**: Initial version with PostgreSQL 17 client tools upgrade based on GitLab toolbox CE v18.1.2
