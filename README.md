@@ -37,7 +37,7 @@ cd gitlab-toolbox-upgraded
 docker build -t gitlab-toolbox-upgraded:latest .
 
 # Optional: Tag with specific version
-docker build -t gitlab-toolbox-upgraded:v18.1.2-pg17 .
+docker build -t gitlab-toolbox-upgraded:v19.0.0 .
 ```
 
 ## Usage
@@ -64,10 +64,10 @@ gitlab:
 
 ### Database Operations
 
-The upgraded PostgreSQL client tools allow you to work with PostgreSQL 17 databases:
+The upgraded PostgreSQL client tools allow you to work with PostgreSQL 18 databases:
 
 ```bash
-# Connect to PostgreSQL 17 database
+# Connect to PostgreSQL 18 database
 psql -h your-db-host -U username -d database_name
 
 # Perform database backup
@@ -114,7 +114,7 @@ This project follows the same licensing as the base GitLab toolbox image. Please
 
 ### Common Issues
 
-**PostgreSQL connection issues**: Ensure your database server is compatible with PostgreSQL 17 client tools. While the client is backward compatible, some features might not be available when connecting to older servers.
+**PostgreSQL connection issues**: Ensure your database server is compatible with PostgreSQL 18 client tools. While the client is backward compatible, some features might not be available when connecting to older servers.
 
 **Build failures**: Make sure you have access to the GitLab container registry and the PostgreSQL APT repository is accessible from your build environment.
 
