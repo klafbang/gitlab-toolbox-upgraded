@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v19.0.0
+FROM registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v19.0.1
 
 # switch to root user
 USER root
