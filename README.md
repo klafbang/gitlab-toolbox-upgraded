@@ -1,5 +1,7 @@
 # GitLab Toolbox Upgraded
 
+__NOTE:__ Archived since Gitlab supports Postgres 18 natively from 19.2.0
+
 A custom GitLab toolbox Docker image with upgraded PostgreSQL client tools.
 
 ## Overview
